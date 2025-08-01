@@ -1,0 +1,72 @@
+        .floating-element {
+            animation: float 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(20px);
+                /* Adjust for desired float height */
+            }
+
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+
+
+.balloon_A {
+  width: 120px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50% 50% 70% 70%; /* Shape of a balloon */
+  position: absolute; /* Allows movement */
+  top: 0; /* Starting position */
+  left: 10%; /* Center horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  animation: ballon 10s ease-in-out infinite alternate; /* Apply animation */
+}
+
+.balloon_B {
+  width: 120px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  border-radius: 50% 50% 70% 70%; /* Shape of a balloon */
+  position: absolute; /* Allows movement */
+  top: 15%; /* Starting position */
+  animation-delay: 2s;
+  right: 5%; /* Center horizontally */
+  transform: translateX(50%); /* Center horizontally */
+  animation: ballon 10s ease-in-out infinite alternate; /* Apply animation */
+}
+
+@keyframes ballon {
+  0% {
+    transform: translateY(0) translateX(-50%); /* Initial position */
+  }
+  50% {
+    transform: translateY(50px) translateX(-60%); /* Float up and slightly left */
+  }
+  100% {
+    transform: translateY(0) translateX(-0%); /* Return to base height and slightly right */
+  }
+}
+
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0); /* Start at original position */
+  }
+  100% {
+    transform: translateX(-50px); /* Move 100px to the left */
+  }
+}
+
+.rigthIcon {
+  animation-name: slideLeft;
+  animation-duration: 1s;
+  animation-iteration-count: infinite; /* Loop indefinitely */
+  animation-direction: alternate; /* Go back and forth */
+}

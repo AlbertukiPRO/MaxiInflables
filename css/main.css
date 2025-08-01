@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    border: 0;
+}
+
+header {
+    box-shadow: 0 4px 2px -2px rgb(221, 218, 218);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header figcaption {
+    width: 15%;
+}
+
+header figcaption img {
+    width: 100%;
+}
+
+.leftCaption ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.leftCaption ul li a {
+    width: 150px;
+    padding: 25px;
+    color: black;
+    font-size: 1.5rem;
+    font-style: none;
+    text-decoration: none;
+    font-family: "Lilita One", sans-serif;
+}
+
+.leftCaption ul li a:hover {
+    color: brown;
+}
+
+.colinas {
+    background-image: url('../resources/colinas.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+}
+
+.bloquePubA {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+
+.bloquePubA img {
+    width: 30%;
+}
+
+.bloquePubA span {
+    font-size: 50px;
+}
+
+.bloquePubA h4 {
+       font-family: "Lilita One", sans-serif;
+       text-transform: capitalize;
+       font-weight: 100;
+       font-size: 3rem;
+       background-image: linear-gradient(to right, red, orange, #fdcb6e, green, blue, indigo, #f39c12
+       );
+        -webkit-background-clip: text;
+        color: transparent;
+}
+
+.bloquePubA .categories {
+    width: 40%;
+}
+
+.bloquePubA .categories div {
+    width: 100%;    
+    display: flex;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0;
+    vertical-align: middle;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: lighter;
+    border-radius: 15px;
+}
+
+.bloquePubA .categories div h3 {
+    padding: 0 15px;
+    font-size: 2rem;
+}
+.bloquePubA .categories div img {
+    width: 20%;
+}

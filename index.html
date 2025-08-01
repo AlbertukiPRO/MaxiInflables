@@ -1,11 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MaxiInflables</title>
+    <link rel="icon" href="./resources/iconWebsite.PNG">
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="scripts/utils.js"></script>
 </head>
+
+<!-- CODE FOR SLIDES -->
+<!-- https://flickity.metafizzy.co/options#autoplay -->
+
 <body>
-    
+    <header>
+        <marquee style="position: absolute;">
+            <img src="./resources/nube.png" style="width: 50px;">
+        </marquee>
+        <img src="./resources/globlo.png" style="width: 50px;" class="balloon_A">
+        <img src="./resources/globlo.png" style="width: 50px;" class="balloon_B">
+        <figcaption>
+            <img src="./resources/maxiInflables_1.png">
+        </figcaption>
+        <div class="leftCaption">
+            <ul>
+                <li><a href="">Rentas</a></li>
+                <li><a href="">Paquetes</a></li>
+                <li><a href="">Tienda</a></li>
+                <li><a href="">Nosotros</a></li>
+                <li><a href="">Contacto</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="bloquePubA">
+            <img src="./resources/1e721cd26e1c310a2568862354f802cd.jpg" class="floating-element" alt="">
+            <div style="display: flex;justify-content: space-evenly;">
+                <span class="material-symbols-outlined rigthIcon" style="padding: 15px;">west</span>
+                <h4 style="padding: 15px;">  Rentame !</h4>
+            </div>
+            <div class="categories gallery js-flickity"
+                data-flickity-options='{ "wrapAround": true, "autoPlay": true }'>
+                <div class="gallery-cell">
+                    <img src="./resources/musica.png">
+                    <h3>Fiestas</h3>
+                </div>
+                <div class="gallery-cell">
+                    <img src="./resources/partido.png">
+                    <h3>Cumpleaños</h3>
+                </div>
+                <div class="gallery-cell">
+                    <img src="./resources/impresion-de-la-mano.png">
+                    <h3>Infantil</h3>
+                </div>
+                <div class="gallery-cell">
+                    <img src="./resources/baile.png">
+                    <h3>Bodas</h3>
+                </div>
+            </div>
+        </div>
+        <div class="colinas"></div>
+    </main>
 </body>
+
 </html>
