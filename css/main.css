@@ -8,11 +8,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #74b9ff;
     flex-wrap: wrap;
+    padding: 0px 10px;
 }
 
 header figcaption {
-    width: 15%;
+    width: 20%;
+    padding: 20px;
 }
 
 header figcaption img {
@@ -25,10 +28,14 @@ header figcaption img {
     list-style: none;
 }
 
+.leftCaption ul li {
+    justify-content: space-between;
+}
+
 .leftCaption ul li a {
     width: 150px;
     padding: 25px;
-    color: black;
+    color: white;
     font-size: 1.5rem;
     font-style: none;
     text-decoration: none;
@@ -36,7 +43,7 @@ header figcaption img {
 }
 
 .leftCaption ul li a:hover {
-    color: brown;
+    color: yellow;
 }
 
 .colinas {
@@ -70,14 +77,13 @@ header figcaption img {
 }
 
 .bloquePubA h4 {
-       font-family: "Lilita One", sans-serif;
-       text-transform: capitalize;
-       font-weight: 100;
-       font-size: 3rem;
-       background-image: linear-gradient(to right, red, orange, #fdcb6e, green, blue, indigo, #f39c12
-       );
-        -webkit-background-clip: text;
-        color: transparent;
+    font-family: "Lilita One", sans-serif;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-size: 3rem;
+    background-image: linear-gradient(to right, red, orange, #fdcb6e, green, blue, indigo, #f39c12);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 .bloquePubA .categories {
@@ -85,7 +91,7 @@ header figcaption img {
 }
 
 .bloquePubA .categories div {
-    width: 100%;    
+    width: 100%;
     display: flex;
     color: black;
     text-align: center;
@@ -102,6 +108,176 @@ header figcaption img {
     padding: 0 15px;
     font-size: 2rem;
 }
+
 .bloquePubA .categories div img {
     width: 20%;
+}
+
+.btn-yellow {
+    background-color: #fdcb6e;
+    border-radius: 15px;
+    font-size: 15px !important;
+    padding: 15px !important;
+    color: black !important;
+    box-shadow: 5px 5px #e3b411;
+    transition: all ease-in .05s;
+}
+
+main figure {
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+}
+
+main figure img {
+    width: 100%;
+    background-color: transparent;
+}
+
+main figure h1 {
+    position: absolute;
+    font-size: 30px;
+    width: 100%;
+    font-weight: 100;
+    z-index: 6;
+    bottom: -50px;
+    text-align: center;
+    color: #2c3e50;
+    font-family: "Lilita One", sans-serif;
+}
+
+.btn-add {
+    border-radius: 15px;
+    padding: 15px;
+    background-color: crimson;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    font-family: 'Arial', Courier, monospace;
+    position: relative;
+    width: min-content;
+    height: min-content;
+}
+
+.btn-renta {
+    width: 40%;
+    margin: 0 auto;
+    background-color: #27ae60;
+    padding: 15px;
+    border-radius: 5px;
+    color: wheat;
+    font-size: 25px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.circle {
+    background-color: #0687dd;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    clip-path: circle(35%);
+}
+
+.social {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.social h2 {
+    color: #0687dd;
+    font-size: 25px;
+    font-weight: 100;
+    font-family: "Lilita One", sans-serif;
+}
+
+.showGalery {
+    width: 100%;
+    text-align: right;
+}
+
+.showGalery h5 {
+    font-size: 25px;
+    font-weight: 100;
+    margin-top: 50px;
+    font-family: "Lilita One", sans-serif;
+}
+
+.btnOutline {
+    margin-top: 50px;
+    margin-left: 100px;
+    font-family: 'Arial';
+    background-color: white;
+    border: 1px solid #0687dd;
+    border-radius: 5px;
+    color: #0687dd;
+    font-weight: 100;
+    width: min-content;
+    font-size: 15px;
+    padding: 12px 20px;
+
+}
+
+.btnOutline:hover {
+    background-color: #27ae60;
+    color: white;
+    cursor: pointer;
+}
+
+.btnNext {
+    background-color: tomato;
+    width: 50px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    vertical-align: middle;
+}
+
+.camaras {
+    width: 100%;
+    padding: 30px !important;
+}
+
+.camaras .title {
+        font-family: "Lilita One", sans-serif;
+        font-weight: 100;
+        color: #0687dd;
+        font-size: 35px;
+        text-align: center;
+        padding-bottom: 100px;
+}
+
+.camaras .content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.content div {
+    width: 40%;
+}
+
+.content div p:nth-child(1) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;;
+    padding: 0px 15px;
+}
+
+.content div p:nth-child(2) {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;;
+    padding: 15px 15px;
+}
+
+.content .images {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+div.images img {
+    width: 40%;
 }
